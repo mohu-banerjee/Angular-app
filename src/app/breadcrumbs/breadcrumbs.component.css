@@ -1,0 +1,9 @@
+.breadcrumbs-area {
+  margin-top: 20px;
+}
+
+.breadcrumbs-area ol li a {
+  color: #606060;
+  font-weight: 500;
+  font-size: 15px;
+}/*# sourceMappingURL=breadcrumbs.component.css.map */

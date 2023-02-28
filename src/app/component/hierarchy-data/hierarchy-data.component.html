@@ -1,0 +1,67 @@
+
+
+<div class="container">
+  <div class="d-flex form">
+    <div class="row">
+      <div class="col-md-5">
+        <dx-tree-view
+        id="simple-treeview"
+        class="dx-swatch-dark"
+        [items]="employees"
+        [width]="300"
+        (onItemClick)="selectItem($event)"
+        [searchEnabled]="true"
+        searchMode="contains"
+      ></dx-tree-view>
+      </div>
+      <div class="col-md-7">
+        <div id="Employee-Card">
+          <div class="employee-details w-100" [@animateDetails]="showDetails ? true: false">
+            <div class="row card-area">
+              <div class="col-md-5">
+                <div class="mt-4">
+                  <div class="fw-bolder h5 text-center">{{ currentEmployee.text }}</div>
+                  <div class="profile-image"><img [src]="currentEmployee.image"/></div>
+                  <div class="fw-bolder h5 text-center">{{ currentEmployee.sapId  }}</div>
+                  <div class="fw-bolder h5 text-center">{{currentEmployee.role}}</div>
+                </div>
+              </div>
+              <div class="col-md-7 p-0">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="mt-5 pe-1">
+                      <div class="fw-bolder pe-1">Designation:</div>
+                      <div class="fw-bolder pe-1">Gender:</div>
+                      <div class="fw-bolder pe-1">Email:</div>
+                      <div class="fw-bolder pe-1">Contact:</div>
+                      <div class="fw-bolder pe-1">Location:</div>
+                      <div class="fw-bolder pe-1">EmployeeStatus:</div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="mt-5 pe-1">
+                      <div class="">{{ currentEmployee.designation}}</div>
+                      <div class="">{{ currentEmployee.gender}}</div>
+                      <div class="">{{ currentEmployee.email}}</div>
+                      <div class="">{{ currentEmployee.contact}}</div>
+                      <div class="">{{ currentEmployee.location}}</div>
+                      <div class="">{{ currentEmployee.employeeStatus}}</div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn-close closed" aria-label="Close" (click)="closeDetails()"></button>
+                <button class="btn btn-primary btn-small edit-button" (click)="editHierarchyData(currentEmployee.Id)"><i class="bi bi-pencil-square"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div *ngIf="isEditable">
+  <div class="Data-form">
+    <app-data-form [editData]="editableData"></app-data-form>
+  </div>
+</div> -->

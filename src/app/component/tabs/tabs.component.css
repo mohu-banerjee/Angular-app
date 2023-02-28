@@ -1,0 +1,147 @@
+body {
+  background-color: #eeeeee;
+}
+
+h1.table-heading {
+  margin-top: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #585757;
+  margin-bottom: 20px;
+}
+
+table {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid #d5d5d5;
+}
+table thead {
+  background-color: #d30000;
+}
+table thead th {
+  color: #ffffff;
+}
+table tbody tr {
+  background: #fff6f6;
+}
+table tbody tr td {
+  color: #666464;
+}
+table tbody tr td button {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.add-new-button {
+  text-align: right;
+  margin-top: 30px;
+}
+.add-new-button button {
+  border: none;
+  background-color: #2e2d2d;
+  color: #fff;
+  padding: 7px 18px;
+  transition: 0.2s;
+  border-radius: 6px;
+  box-shadow: #818181 0 4px 2px, #939393 0 8px 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.tabs-area {
+  margin-bottom: 30px;
+  min-height: 445px;
+  height: 100%;
+}
+
+ul.nav {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  z-index: 5;
+  margin-bottom: 0 !important;
+}
+
+ul.nav li {
+  line-height: 38px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  margin-right: 15px;
+  width: 23.97%;
+}
+
+ul.nav li:last-child {
+  margin-right: 0 !important;
+}
+
+ul.nav li button {
+  width: 100%;
+  border-radius: 0;
+  background: #f4f4f4;
+  color: #807f7f;
+  border: 1px solid #fbf8f8;
+  border-bottom: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+button:active {
+  transform: none;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: var(--bs-nav-pills-link-active-bg);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.05s;
+  color: #fff;
+}
+
+#pills-tabContent {
+  border: 1px solid #dcd5d5;
+  padding: 25px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #00979d;
+}
+
+ul.pagination {
+  background: #ffffff;
+  box-shadow: 2px 2px 3px 2px #e2e2e2;
+  width: 15%;
+}
+
+ul.pagination li {
+  border: none;
+}
+
+ul.pagination li a {
+  color: #9d9b9b;
+  border: none;
+}
+
+ul.pagination li a:focus {
+  box-shadow: none;
+}
+
+.breadcrumbs-area {
+  margin-top: 20px;
+}
+
+.breadcrumbs-area ol li a {
+  color: #606060;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+bi-trash3 {
+  color: red !important;
+}/*# sourceMappingURL=tabs.component.css.map */

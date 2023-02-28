@@ -1,0 +1,118 @@
+.wrapper {
+  height: 600px;
+}
+
+#top-banner-3.banner h2 {
+  padding-bottom: 0.3em;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-size: 2.5em;
+  text-transform: none;
+  font-size: 2em;
+}
+
+.main-banner {
+  padding-bottom: 50px;
+  text-align: center;
+  background: url("../../assets/imgs/banner.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 600px;
+}
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  height: 855px;
+}
+.bg-overlay .about-ukg {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.bg-overlay .about-ukg h1 {
+  margin-top: 50px;
+  margin-top: -50px;
+  text-shadow: 2px 1px 2px #000;
+  font-size: 5em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.bg-overlay .about-ukg .sub-heading {
+  background-color: #023c3b;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 40px;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+.bg-overlay .about-ukg .sub-heading h3 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+.bg-overlay .about-ukg .read-more-btn .btn {
+  background: #8f0000;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.bg-overlay .about-ukg .read-more-btn .btn:focus {
+  box-shadow: none;
+}
+
+@media (min-width: 367px) and (max-width: 767px) {
+  .main-banner {
+    height: 100%;
+  }
+  .main-banner .about-ukg {
+    padding-top: 50%;
+  }
+  .main-banner .about-ukg h1 {
+    font-size: 25px;
+  }
+  .main-banner .about-ukg .sub-heading {
+    width: 70%;
+  }
+  .main-banner .about-ukg .sub-heading h3 {
+    font-size: 20px;
+  }
+}
+section {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  word-wrap: break-word;
+  display: block;
+}
+
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #efefef;
+}
+#about .about-text {
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
+#about h3 {
+  font-size: 2.25rem;
+  color: #444444;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  line-height: 1.2;
+}
+#about img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height: 100%;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+  transform: rotate(-2deg);
+  border: 10px solid #fff;
+}/*# sourceMappingURL=home.component.css.map */

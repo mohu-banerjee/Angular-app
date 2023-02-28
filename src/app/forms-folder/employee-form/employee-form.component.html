@@ -1,0 +1,47 @@
+
+<div class="form-area">
+  <div class="container">
+    <div class="form-heading">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Fill the below form</h1>
+        </div>
+      </div>
+
+    </div>
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="customerName" name="customerName">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" [(ngModel)]="email" name="email" class="form-control" style="width: 100%;" id>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="passowrd" [(ngModel)]="password" name="passowrd" class="form-control" style="width: 100%;" id="password">
+      </div>
+      </div>
+      <div class="col-md-3">
+        <label></label>
+        <button type="submit" [disabled]="!myForm.value.valid" style="width: 100%;" class="form-control">Register</button>
+
+        </div>
+      <div class="col-md-12">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+</form>
+  </div>
+</div>
+

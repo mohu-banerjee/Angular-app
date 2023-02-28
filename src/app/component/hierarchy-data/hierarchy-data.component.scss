@@ -1,0 +1,61 @@
+::ng-deep .form{
+  #simple-treeview,#employee-details {
+    display: inline-block;
+  }
+
+  #Employee-Card {
+    vertical-align: top;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 0.2px;
+    height: auto;
+
+    .employee-details {
+      position: relative;
+      background: #ededed;
+      border-radius: 4px;
+      height: 280px;
+      .profile-image{
+        img{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          height: 50%;
+          border-radius: 50%;
+        }
+      }
+      .closed{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        outline: none;
+      }
+
+      .edit-button{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        outline: none;
+        background-color: rgba(164, 155, 159, 0.8);
+        border-color: rgba(187, 182, 185, 0.8);
+      }
+    }
+  }
+}
+::ng-deep .dark .employee-details > div {
+  color: #f0f0f0;
+}
+
+::ng-deep .hidden {
+  visibility: hidden;
+}
+
+.card-area{
+  padding: 15px;
+}
+
+.form{
+  padding-top: 15px;
+}
+
